@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8475623B2B60DC8800B134E4 /* MiDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475623A2B60DC8800B134E4 /* MiDictionary.m */; };
 		84C5EA542B5A8ABF00618A0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA532B5A8ABF00618A0D /* AppDelegate.m */; };
 		84C5EA572B5A8ABF00618A0D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA562B5A8ABF00618A0D /* SceneDelegate.m */; };
 		84C5EA5A2B5A8ABF00618A0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA592B5A8ABF00618A0D /* ViewController.m */; };
@@ -17,6 +18,10 @@
 		84C5EA682B5A8AC000618A0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA672B5A8AC000618A0D /* main.m */; };
 		84C5EA722B5A8AC000618A0D /* GraphExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA712B5A8AC000618A0D /* GraphExampleTests.m */; };
 		84C5EA7D2B5A8AC000618A0D /* GraphExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA7C2B5A8AC000618A0D /* GraphExampleUITests.m */; };
+		84C5EA912B5A8B3500618A0D /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA902B5A8B3500618A0D /* ChartViewController.m */; };
+		84E1B33C2B5E30D200C50B4D /* PNChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E1B3362B5E30C400C50B4D /* PNChart.framework */; };
+		84E1B33D2B5E30D200C50B4D /* PNChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E1B3362B5E30C400C50B4D /* PNChart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E1B34A2B5E443B00C50B4D /* MainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E1B3492B5E443B00C50B4D /* MainUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,46 @@
 			remoteGlobalIDString = 84C5EA4E2B5A8ABF00618A0D;
 			remoteInfo = GraphExample;
 		};
+		84E1B3312B5E30C400C50B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF7A864182AA9F6003645C4;
+			remoteInfo = PNChartDemo;
+		};
+		84E1B3332B5E30C400C50B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E984E511AE2AF2D00E817A0;
+			remoteInfo = PNChartTests;
+		};
+		84E1B3352B5E30C400C50B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3ED57DDC204F0C44003D6796;
+			remoteInfo = PNChart;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84E1B33E2B5E30D300C50B4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E1B33D2B5E30D200C50B4D /* PNChart.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		847562362B60DBA000B134E4 /* MiDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiDictionary.h; sourceTree = "<group>"; };
+		8475623A2B60DC8800B134E4 /* MiDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiDictionary.m; sourceTree = "<group>"; };
 		84C5EA4F2B5A8ABF00618A0D /* GraphExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5EA522B5A8ABF00618A0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84C5EA532B5A8ABF00618A0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +98,11 @@
 		84C5EA782B5A8AC000618A0D /* GraphExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5EA7C2B5A8AC000618A0D /* GraphExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphExampleUITests.m; sourceTree = "<group>"; };
 		84C5EA7E2B5A8AC000618A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5EA8F2B5A8B0400618A0D /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		84C5EA902B5A8B3500618A0D /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PNChart.xcodeproj; path = "../../Documents/Application Development/Library/XCode/PNChart-master/PNChart.xcodeproj"; sourceTree = "<group>"; };
+		84E1B3492B5E443B00C50B4D /* MainUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainUtil.m; sourceTree = "<group>"; };
+		84E1B34D2B5E4A5A00C50B4D /* MainUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E1B33C2B5E30D200C50B4D /* PNChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +138,7 @@
 				84C5EA702B5A8AC000618A0D /* GraphExampleTests */,
 				84C5EA7B2B5A8AC000618A0D /* GraphExampleUITests */,
 				84C5EA502B5A8ABF00618A0D /* Products */,
+				84E1B3002B5E29EA00C50B4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +155,13 @@
 		84C5EA512B5A8ABF00618A0D /* GraphExample */ = {
 			isa = PBXGroup;
 			children = (
+				84E1B3472B5E431B00C50B4D /* Util */,
+				84C5EA8E2B5A8AE900618A0D /* ChartView */,
+				84C5EA8D2B5A8AD700618A0D /* ChartType */,
 				84C5EA522B5A8ABF00618A0D /* AppDelegate.h */,
 				84C5EA532B5A8ABF00618A0D /* AppDelegate.m */,
 				84C5EA552B5A8ABF00618A0D /* SceneDelegate.h */,
 				84C5EA562B5A8ABF00618A0D /* SceneDelegate.m */,
-				84C5EA582B5A8ABF00618A0D /* ViewController.h */,
-				84C5EA592B5A8ABF00618A0D /* ViewController.m */,
 				84C5EA5B2B5A8ABF00618A0D /* Main.storyboard */,
 				84C5EA612B5A8AC000618A0D /* Assets.xcassets */,
 				84C5EA632B5A8AC000618A0D /* LaunchScreen.storyboard */,
@@ -140,6 +190,53 @@
 			path = GraphExampleUITests;
 			sourceTree = "<group>";
 		};
+		84C5EA8D2B5A8AD700618A0D /* ChartType */ = {
+			isa = PBXGroup;
+			children = (
+				84C5EA582B5A8ABF00618A0D /* ViewController.h */,
+				84C5EA592B5A8ABF00618A0D /* ViewController.m */,
+			);
+			path = ChartType;
+			sourceTree = "<group>";
+		};
+		84C5EA8E2B5A8AE900618A0D /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				84C5EA8F2B5A8B0400618A0D /* ChartViewController.h */,
+				84C5EA902B5A8B3500618A0D /* ChartViewController.m */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		84E1B3002B5E29EA00C50B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E1B32C2B5E30C400C50B4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E1B3322B5E30C400C50B4D /* PNChartDemo.app */,
+				84E1B3342B5E30C400C50B4D /* PNChartTests.xctest */,
+				84E1B3362B5E30C400C50B4D /* PNChart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E1B3472B5E431B00C50B4D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				84E1B34D2B5E4A5A00C50B4D /* MainUtil.h */,
+				84E1B3492B5E443B00C50B4D /* MainUtil.m */,
+				847562362B60DBA000B134E4 /* MiDictionary.h */,
+				8475623A2B60DC8800B134E4 /* MiDictionary.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,12 +247,15 @@
 				84C5EA4B2B5A8ABF00618A0D /* Sources */,
 				84C5EA4C2B5A8ABF00618A0D /* Frameworks */,
 				84C5EA4D2B5A8ABF00618A0D /* Resources */,
+				84E1B33E2B5E30D300C50B4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GraphExample;
+			packageProductDependencies = (
+			);
 			productName = GraphExample;
 			productReference = 84C5EA4F2B5A8ABF00618A0D /* GraphExample.app */;
 			productType = "com.apple.product-type.application";
@@ -226,8 +326,17 @@
 				Base,
 			);
 			mainGroup = 84C5EA462B5A8ABF00618A0D;
+			packageReferences = (
+				84E1B3042B5E2BD500C50B4D /* XCRemoteSwiftPackageReference "PNChart" */,
+			);
 			productRefGroup = 84C5EA502B5A8ABF00618A0D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84E1B32C2B5E30C400C50B4D /* Products */;
+					ProjectRef = 84E1B32B2B5E30C400C50B4D /* PNChart.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84C5EA4E2B5A8ABF00618A0D /* GraphExample */,
@@ -236,6 +345,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84E1B3322B5E30C400C50B4D /* PNChartDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PNChartDemo.app;
+			remoteRef = 84E1B3312B5E30C400C50B4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84E1B3342B5E30C400C50B4D /* PNChartTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PNChartTests.xctest;
+			remoteRef = 84E1B3332B5E30C400C50B4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84E1B3362B5E30C400C50B4D /* PNChart.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PNChart.framework;
+			remoteRef = 84E1B3352B5E30C400C50B4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84C5EA4D2B5A8ABF00618A0D /* Resources */ = {
@@ -270,8 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C5EA682B5A8AC000618A0D /* main.m in Sources */,
+				84E1B34A2B5E443B00C50B4D /* MainUtil.m in Sources */,
+				84C5EA912B5A8B3500618A0D /* ChartViewController.m in Sources */,
 				84C5EA5A2B5A8ABF00618A0D /* ViewController.m in Sources */,
 				84C5EA542B5A8ABF00618A0D /* AppDelegate.m in Sources */,
+				8475623B2B60DC8800B134E4 /* MiDictionary.m in Sources */,
 				84C5EA572B5A8ABF00618A0D /* SceneDelegate.m in Sources */,
 				84C5EA602B5A8ABF00618A0D /* GraphExample.xcdatamodeld in Sources */,
 			);
@@ -586,6 +722,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84E1B3042B5E2BD500C50B4D /* XCRemoteSwiftPackageReference "PNChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/damonchen/PNChart.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		84C5EA5E2B5A8ABF00618A0D /* GraphExample.xcdatamodeld */ = {
